@@ -25,4 +25,6 @@ def twoSum(nums, target):
         prevMap[n] = i
     return True
 
+
 print(twoSum([3, 4, 5, 6], 7))
+print( twoSum([4,5,6], 10))
