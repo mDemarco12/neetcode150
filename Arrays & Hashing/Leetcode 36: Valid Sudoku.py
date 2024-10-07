@@ -4,7 +4,6 @@ import collections
 class Solution:
     board1, board2 = 0, 0
 
-
 '''
 You are given a a 9 x 9 Sudoku board board. A Sudoku board is valid if the following rules are followed:
     1.Each row must contain the digits 1-9 without duplicates.
@@ -13,8 +12,6 @@ You are given a a 9 x 9 Sudoku board board. A Sudoku board is valid if the follo
 Return true if the Sudoku board is valid, otherwise return false
 Note: A board does not need to be full or be solvable to be valid.
 '''
-
-
 def isValidSudoku(board):
     cols = collections.defaultdict(set)
     rows = collections.defaultdict(set)
@@ -46,5 +43,6 @@ board2 = [["1", "2", ".", ".", "3", ".", ".", ".", "."], ["4", ".", ".", "5", ".
           [".", ".", ".", ".", ".", ".", "2", ".", "."], [".", ".", ".", "4", "1", "9", ".", ".", "8"],
           [".", ".", ".", ".", "4", ".", ".", "4", "9"]]
 
+solution = Solution()
 print(isValidSudoku(board1))
 print(isValidSudoku(board2))
