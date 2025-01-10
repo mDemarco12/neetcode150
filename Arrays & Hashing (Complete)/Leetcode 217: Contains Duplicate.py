@@ -32,7 +32,7 @@ class Solution:
         sol3, sol4 = self.containsDuplicateHashMap(list1), self.containsDuplicateHashMap(list2)
         end_if2 = time.perf_counter()
 
-        totalTime1, totalTime2 = round((end_nc1 - start_nc1) * 1000, 5), round((end_if2 - start_if2) * 1000,5)
+        totalTime1, totalTime2 = round((end_nc1 - start_nc1) * 1000, 5), round((end_if2 - start_if2) * 1000, 5)
 
         print("Contains Duplicate HashSet:")
         print(f"Set 1: {sol1}\nSet 2: {sol2}")
@@ -45,6 +45,8 @@ class Solution:
             print(f"\nThe HashMap has a faster execution time of {totalTime2} seconds.")
         else:
             print(f"\nThe HashSet has a faster execution time of {totalTime1} seconds.")
+
+
 '''
 What did this exercise teach me? 
 Hash Maps are blistering quick and the saying is true...
