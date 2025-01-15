@@ -12,7 +12,7 @@ class Solution:
         # Initialize the bottom right of the 2d Matrix to zero
         res[ROWS - 1][COLS] = 0
 
-        # Iterate through the grid bottom up and calc the value for reach pos
+        # Iterate through the grid bottom up and calc the value for each pos
         for r in range(ROWS - 1, -1, -1):
             for c in range(COLS - 1, -1, -1):
                 # for a pos in result, we need to take val @ position,
