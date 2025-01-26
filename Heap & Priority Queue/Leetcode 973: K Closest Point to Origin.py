@@ -63,6 +63,6 @@ class Solution:
         else:
             print("The Sort is more efficient than the Heap.")
 
-
-solution = Solution()
-solution.sol()
+if __name__ == '__main__':
+    solution = Solution()
+    solution.sol()
