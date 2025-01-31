@@ -5,7 +5,7 @@ from typing import List
 
 class Twitter:
     def __init__(self):
-        self.count = 0
+        self.count: int = 0
         self.tweetMap = defaultdict(list)  # map each userId to list of [count, tweetId]
         self.followMap = defaultdict(set)  # map userId to set of followeeId
 
