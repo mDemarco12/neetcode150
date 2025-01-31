@@ -14,8 +14,8 @@ class Twitter:
         self.count -= 1  # decrement for minHeap
 
     def getNewsFeed(self, userId: int) -> List[int]:
-        res = []
-        minHeap = []
+        res: List = []
+        minHeap: List = []
 
         self.followMap[userId].add(userId)
         for followeeId in self.followMap[userId]:
